@@ -15,14 +15,7 @@ const App = () => {
   const [offset, setOffset] = useState(0);
   const [recipeToSearch, setRecipeToSearch] = useState("");
   const [totalResults, setTotalResults] = useState(0);
-  // state = {
-  //   recipes: [],
-  //   favRecipes: [],
-  //   baseImgUrl: "",
-  //   offset: 0,
-  //   recipeToSearch: "",
-  //   totalResults: 0,
-  // };
+
   useEffect(() => {
     const localStorageFavRecipes = getRecipesFromLocalStorage();
     setFavRecipes(localStorageFavRecipes);
@@ -30,25 +23,10 @@ const App = () => {
     setBaseImgUrl(localStorageBaseImgUrl);
   }, []);
 
-  // componentDidMount() {
-  //   this.setState({
-  //     favRecipes: getRecipesFromLocalStorage(),
-  //     baseImgUrl: getImgUrlFromLocalStorage(),
-  //   });
-  // }
   useEffect(() => {
     get10MoreRecipes();
     localStorage.setItem("favRecipes", JSON.stringify(favRecipes));
   }, [offset, favRecipes]);
-
-  // componentDidUpdate(prevProps, prevState) {
-  //   if (prevState.offset !== this.state.offset) {
-  //     this.get10MoreRecipes();
-  //   }
-  //   if (prevState.favRecipes !== this.state.favRecipes) {
-  //     localStorage.setItem("favRecipes", JSON.stringify(this.state.favRecipes));
-  //   }
-  // }
 
   const searchRecipe = (e) => {
     e.preventDefault();
@@ -118,23 +96,6 @@ const App = () => {
 
     console.log(selectedRecipe);
   };
-
-  // selectedRecipe = (addToFavId) => {
-  //   const mappedRecipes = this.state.recipes.map((recipe) => {
-  //     if (recipe.id === addToFavId) {
-  //       return {
-  //         ...recipe,
-  //         selectedRecipe: !recipe.selectedRecipe,
-  //       };
-  //     } else {
-  //       return recipe;
-  //     }
-  //   });
-
-  //   this.setState({
-  //     favRecipes: [...this.state.favRecipes, mappedRecipes],
-  //   });
-  // };
 
   return (
     <AppContext.Provider

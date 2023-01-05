@@ -13,9 +13,9 @@ const NavBar = () => {
         <li>
           <Link to={routes.favRecipes}>Favorites Recipes</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to={routes.about}>About</Link>
-        </li>
+        </li> */}
         {/* <li>
           <Link to={routes.recipeName}>RecipeName</Link>
         </li> */}

@@ -4,7 +4,7 @@ import { StyledFooterDiv } from "./StyledFooter.js";
 const Footer = () => {
   return (
     <StyledFooterDiv>
-      <div>Copyright by appi Recipes - 2022. </div>
+      <div>Copyright by appi Recipes - 2023. </div>
     </StyledFooterDiv>
   );
 };

@@ -12,7 +12,6 @@ const SearchRecipeForm = () => {
   return (
     <>
       <StyledSearchRecipeTitleDiv>
-        {" "}
         <h1>Cookbook</h1>
         <h2>Write the name of the recipe</h2>
       </StyledSearchRecipeTitleDiv>
