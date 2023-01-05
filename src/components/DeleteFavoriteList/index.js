@@ -1,9 +1,10 @@
 import React from "react";
+import Button from "../atoms/Button";
 
 const DeleteFavoriteList = ({ id, deleteRecipes }) => {
   return (
     <>
-      <button onClick={() => deleteRecipes(id)}>Delete</button>
+      <Button onClick={() => deleteRecipes(id)}>Delete</Button>
     </>
   );
 };

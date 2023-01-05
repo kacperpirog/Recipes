@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const StyledFooterDiv = styled.div`
-  margin-top: 25px;
   min-height: 100%;
   position: relative;
   margin-top: 6rem;

@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export const StyledFavoriteRecipesDiv = styled.div`
-  
+export const StyledFavoriteRecipesDiv = styled.div`  
   aspect-ratio: 3/2
   object-fit: contain;
   margin-bottom: 1rem;
   margin-top:1rem ;
+  
  ul{   
     display: flex;
     flex-wrap: wrap;
@@ -28,5 +28,6 @@ export const StyledFavoriteRecipesDiv = styled.div`
   img:hover{
     opacity: 0.8;
   }
+
  
 `;

@@ -1,4 +1,4 @@
-import { Component, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import Router from "./routing/Router";
 import AppContext from "./context/context";

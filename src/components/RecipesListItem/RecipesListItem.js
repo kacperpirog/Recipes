@@ -34,11 +34,13 @@ const RecipesListItem = ({ title, image, id, servings, readyInMinutes }) => {
         </div>
       </Link>
       <div>
-        <h3>{title}</h3>
+        <h3 className="styled__div__h3">{title}</h3>
       </div>
-      <Button onClick={() => addToFav(id)}>
-        {isInFav ? "in to fav" : "add to fav"}
-      </Button>
+      <div>
+        <Button onClick={() => addToFav(id)}>
+          {isInFav ? "in to fav" : "add to fav"}
+        </Button>
+      </div>
     </StyledDivListitem>
   );
 };
