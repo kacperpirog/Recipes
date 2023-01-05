@@ -26,6 +26,7 @@ const App = () => {
   useEffect(() => {
     get10MoreRecipes();
     localStorage.setItem("favRecipes", JSON.stringify(favRecipes));
+    // eslint-disable-next-line
   }, [offset, favRecipes]);
 
   const searchRecipe = (e) => {
