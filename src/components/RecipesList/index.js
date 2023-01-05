@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import RecipesListItem from "../RecipesListItem/RecipesListItem";
+import RecipesListItem from "../RecipesListItem";
 import AppContext from "../../context/context";
 import { StyledDivRecipesList, StyledUl } from "./StyledulListItem";
 

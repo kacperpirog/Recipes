@@ -1,6 +1,5 @@
 import React from "react";
-
-import SinglePageRecipe from "../components/SinglePage.js/SinglePageRecipe";
+import SinglePageRecipe from "../components/SinglePage/";
 
 const SingleRecipe = () => {
   return (
