@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import AppContext from "../../context/context";
 import Button from "../atoms/Button";
-
 import { StyledDivListitem } from "./StyledRecipesListitem";
 
 const RecipesListItem = ({ title, image, id, servings, readyInMinutes }) => {
